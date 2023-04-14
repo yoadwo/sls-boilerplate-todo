@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "36a8a91d-b043-42fd-b53c-3d92e4b5ea7d",
+		"name": "local dynamodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"first\",\r\n    \"description\": \"my very first todo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dev/todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todo by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dev/todo/7bd77304-ee34-4eb0-b0c6-f17de269370a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"todo",
+						"7bd77304-ee34-4eb0-b0c6-f17de269370a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update todo by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"description\": \"my very first todo - update v3\",\r\n        \"title\": \"first\",\r\n        \"status\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/todo/7bd77304-ee34-4eb0-b0c6-f17de269370a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"todo",
+						"7bd77304-ee34-4eb0-b0c6-f17de269370a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete todo by id Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"description\": \"my very first todo - update v3\",\r\n        \"title\": \"first\",\r\n        \"status\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/todo/7bd77304-ee34-4eb0-b0c6-f17de269370a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"todo",
+						"7bd77304-ee34-4eb0-b0c6-f17de269370a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
